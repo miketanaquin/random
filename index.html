@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>Support test</title>
+<style>
+/* Insert styles here */
+
+*{
+  padding: 2px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+	margin:0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #666;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Ticker_HeaderRow_DateTime span {
+	font-style: italic;
+}
+
+.TickerNameTD {
+	border: 2px solid black;
+	display: inline grid;
+	border-bottom-color: gray;
+	border-right-color: gray;
+	font-weight: bold;
+}
+.TickerNameTD:hover{
+	background-color: blanchedalmond;
+}
+
+.TickerValueTD {
+	border: 2px solid black;
+	display: inline grid;
+	border-right-color: gray;
+	font-weight: bold;
+}
+.TickerValueTD:hover{
+	background-color: blanchedalmond;
+}
+
+.plusPriceChange {
+	color: green;
+}
+
+.plusPercentChange {
+	color: green;
+}
+
+.ButtonContainer {
+  padding: 10px 10px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: lightblue;
+  border: none;
+  border-radius: 15px;
+
+}
+
+.ButtonContainer:hover {
+	background-color: blue;
+}
+
+.ButtonContainer:active {
+  background-color: lightblue;
+  transform: translateY(4px);
+}
+
+
+
+
+/* End of styles section */
+</style>
+</head>
+<body>
+<div id="TickerContainer">
+	<table class="TickerTbl">
+		<tbody>
+			<tr class="Ticker_HeaderRow HeaderRow Ticker_HeaderRow_DateTime">
+				<td colspan="10" class="TickerDateTD" title="Date and time">
+					<div class="TickerDateDiv">
+						<span>Date and time</span>
+						<span>22 January 2018 11:41  (GMT+02:00)</span>
+					</div>
+				</td>
+			</tr>
+			<tr class="Ticker_HeaderRow HeaderRow Ticker_HeaderRow_Header">
+				<td class="TickerNameTD TickerNameTD_ShareName">
+					<span>Share</span>
+				</td>
+				<td class="TickerNameTD TickerNameTD_MarketName">
+					<span>Market</span>
+				</td>
+				<td class="TickerNameTD TickerNameTD_LastPrice">
+					<span>Last</span>
+				</td>
+				<td class="TickerNameTD TickerNameTD_High">
+					<span>High</span>
+				</td>
+				<td class="TickerNameTD TickerNameTD_Low">
+					<span>Low</span>
+				</td>
+				<td class="TickerNameTD TickerNameTD_LastPriceChange">
+					<span>(+/-)</span>
+				</td>
+				<td class="TickerNameTD TickerNameTD_LastPricePercentChange">
+					<span>%</span>
+				</td>
+				<td class="TickerNameTD TickerNameTD_Bid">
+					<span>Bid</span>
+				</td>
+				<td class="TickerNameTD TickerNameTD_Ask">
+					<span>Ask</span>
+				</td>
+				<td class="TickerNameTD TickerNameTD_Volume">
+					<span>Volume</span>
+				</td>
+			</tr>
+			<tr class="TickerRow OddRow Ticker_OddRow Ticker_SelectedRow">
+				<td class="TickerValueTD TickerValueTD_ShareName" title="Share">
+					<span>Neste (HEL)</span>
+				</td>
+				<td class="TickerValueTD TickerValueTD_MarketName" title="Market">
+					<span>Helsinki</span>
+				</td>
+				<td class="TickerValueTD TickerValueTD_LastPrice" title="Last">
+					<span>58.40</span>
+				</td>
+				<td class="TickerValueTD TickerValueTD_High" title="High">
+					<span>58.44</span>
+				</td>
+				<td class="TickerValueTD TickerValueTD_Low" title="Low">
+					<span>57.70</span>
+				</td>
+				<td class="TickerValueTD TickerValueTD_LastPriceChange plus plusPriceChange" title="(+/-)">
+					<span>0.06</span>
+				</td>
+				<td class="TickerValueTD TickerValueTD_LastPricePercentChange plus plusPercentChange" title="%">
+					<span>0.10</span>
+				</td>
+				<td class="TickerValueTD TickerValueTD_Bid" title="Bid">
+					<span>58.40</span>
+				</td>
+				<td class="TickerValueTD TickerValueTD_Ask" title="Ask">
+					<span>58.42</span>
+				</td>
+				<td class="TickerValueTD TickerValueTD_Volume" title="Volume">
+					<span>207,107</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<button class="ButtonContainer" style="width: 200px">DOWNLOAD DATA</button>
+</body>
+</html>
